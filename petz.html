@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+/*Estilo do Menu*/
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #04AA6D;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: Arial;  
+  background: #cc9393;
+}
+
+@media screen and (max-width: 600px) {
+li {float: none;}
+}
+
+/*Estilo Geral*/
+
+.container {
+   display: grid;
+        
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color:#04AA6D;
+   
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn{
+   border-radius: 0.3rem;  
+}
+
+.btn1{
+  background-color: rgb(118, 178, 118); 
+  border-radius: 0.3rem;  
+}
+
+
+
+        .principal {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            padding-left: 30px;
+            padding-right: 10px;
+            text-align: center;
+        }
+
+     
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+            background-color: whitesmoke;
+        }
+
+        .img img {
+            width: 200px;
+            height: 150px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container {
+                max-width: 1200px;
+                margin: 0 auto;
+
+            }*/
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }           
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                margin-top: 10px;
+            }
+
+            .img{
+              width: 95%;
+            }
+
+            .img img {
+              width: 100%;
+        }
+      }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>    
+    <li><a href="petz.html">Pets disponiveis</a></li>
+    <li><a href="adotados.html">Adotados</a></li>
+    <li><a href="contato1.html">Contato</a></li>
+ </ul>
+
+ <header class="container">
+  <h1 style="color: white; text-align: center;">Nossos Bichinhos</h1>
+  <br>
+</header>
+
+ <div class="container wrapper">
+ 
+  <section class=" principal">
+      
+      <div class="card">
+          <div class="img">
+              <img src="Marcos.jpeg"><br>
+
+              <div class="">
+                  <h2>Marcos Vinicius</h2>
+                  <p>Macho - aprox: 4 anos</p><br>
+                  <button class="btn"><a href="contato.html">Me Adote</a></button>
+                  <button class="btn1"><a href="https://wa.me/5513988362564?text=Ol%C3%A1%2C+Quero+adotar+o+Marcos%21">Whatsapp</a></button>
+
+              </div>
+          </div>
+
+          <div class="img">
+              <img src="Cleiton.jpeg"><br>
+
+              <div class="">
+                  <h2>Cleiton</h2>
+                  <p>Macho - aprox: 2 anos</p><br>
+                  <button class="btn"><a href="contato.html">Me Adote</a></button>
+                  <button class="btn1"><a href="https://wa.me/5513992004928?text=Ol%C3%A1%2C+Quero+adotar+o+Cleiton%21">Whatsapp</a></button>
+              </div>
+          </div>
+
+          <div class="img">
+              <img src="Frederico.jpeg"><br>
+
+              <div class="">
+                  <h2>Frederico</h2>
+                  <p>Macho - aprox: 3 anos</p><br>
+                  <button class="btn"><a href="contato.html">Me Adote</a></button>
+                  <button class="btn1"><a href="https://wa.me/5513992004928?text=Ol%C3%A1%2C+Quero+adotar+o+Frederico%21">Whatsapp</a></button>
+              </div>
+          </div>
+
+          <div class="img">
+            <img src="Lua.jpeg"><br>
+
+            <div class="">
+                <h2>Lua</h2>
+                <p>Fêmea - aprox: 2 anos</p><br>
+                <button class="btn"><a href="contato.html">Me Adote</a></button>
+                <button class="btn1"><a href="https://wa.me/5513988362564?text=Ol%C3%A1%2C+Quero+adotar+a+Lua%21">Whatsapp</a></button>
+            </div>
+        </div>
+
+        <div class="img">
+          <img src="Tiquinho.jpeg"><br>
+
+          <div class="">
+              <h2>Tiquinho</h2>
+              <p>Macho - aprox: 2 anos</p><br>
+              <button class="btn"><a href="contato.html">Me Adote</a></button>
+              <button class="btn1"><a href="https://wa.me/5513992004928?text=Ol%C3%A1%2C+Quero+adotar+o+Tiquinho%21">Whatsapp</a></button>
+          </div>
+      </div>
+
+      <div class="img">
+        <img src="Simaria.jpeg"><br>
+
+        <div class="">
+            <h2>Simaria</h2>
+            <p>Fêmea - aprox: 1 anos</p><br>
+            <button class="btn"><a href="contato.html">Me Adote</a></button>
+            <button class="btn1"><a href="https://wa.me/5513988362564?text=Ol%C3%A1%2C+Quero+adotar+a+Simaria%21">Whatsapp</a></button>
+        </div>
+    </div>
+
+    <div class="img">
+      <img src="Simone.jpeg"><br>
+
+      <div class="">
+          <h2>Simone</h2>
+          <p>Fêmea - aprox: 1 anos</p><br>
+          <button class="btn"><a href="contato.html">Me Adote</a></button>
+          <button class="btn1"><a href="https://wa.me/5513988362564?text=Ol%C3%A1%2C+Quero+adotar+a+Simone%21">Whatsapp</a></button>
+      </div>
+  </div>
+
+  <div class="img">
+    <img src="Caramelo.jpg"><br>
+
+    <div class="">
+        <h2>Caramelo</h2>
+        <p>Fêmea - aprox: 5 anos</p><br>
+        <button class="btn"><a href="contato.html">Me Adote</a></button>
+        <button class="btn1"><a href="https://wa.me/5513988362564?text=Ol%C3%A1%2C+Quero+adotar+o+Caramelo%21">Whatsapp</a></button>
+    </div>
+</div>
+
+<div class="img">
+  <img src="pipoca.jpg"><br>
+
+  <div class="">
+      <h2>Pipoca</h2>
+      <p>Fêmea - aprox: 1 anos</p><br>
+      <button class="btn"><a href="contato.html">Me Adote</a></button>
+      <button class="btn1"><a href="https://wa.me/5513988362564?text=Ol%C3%A1%2C+Quero+adotar+a+Pipoca%21">Whatsapp</a></button>
+  </div>
+</div>
+
+<div class="img">
+  <img src="Eduardo.jpg"><br>
+
+  <div class="">
+      <h2>Eduardo</h2>
+      <p>Macho - aprox: 7 anos</p><br>
+      <button class="btn"><a href="contato.html">Me Adote</a></button>
+      <button class="btn1"><a href="https://wa.me/5513988362564?text=Ol%C3%A1%2C+Quero+adotar+o+Eduardo%21">Whatsapp</a></button>
+  </div>
+</div>
+
+      </div>
+  </section>
+</div>
+
+
+  
+</body>
+</html>
